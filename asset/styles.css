@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    /* background: linear-gradient(100deg, #2c2c2c, #0f2027); */ 
+    background-image: linear-gradient(100deg, #1f1f1f, #2f2f2f, #1a1a1a);
+    color: #ffdfdb;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 120px;
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+.row {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #181a1a;
+    color: rgb(247, 226, 223);    
+    border-radius: 25px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 21px;
+    color: #ffdfdb;
+    background: transparent;
+    padding: 16px;
+    font-weight: 14px;
+}
+
+button {
+    font-size: 21px;
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: rgb(247, 226, 223);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#myUnOrdList {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin-top: 40px;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo {
+    min-width: 500px;
+    max-width: 600px;
+    width: 100px;
+    margin: 1.5rem 0;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    word-wrap: break-word;
+}
+
+.standard-todo {
+    background-color: rgb(26, 27, 27);
+}
+
+.todo li {
+    padding: 5px;
+    font-size: 24px;
+    flex: 1;
+    border-radius: 30px;
+    overflow-wrap: anywhere;
+}
+
+.check-btn, .delete-btn {
+    font-size: 19px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check { 
+    pointer-events: none;
+}
+
+.todo-item.completed {
+    transition: 0.2s;
+    text-decoration: line-through;
+    opacity: 0.9;
+}
+
+.fall {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
